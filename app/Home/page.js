@@ -12,10 +12,7 @@ const App = () => {
     <div className="bg-gray-100 min-h-screen">
       <Navbar />
       <LandingP />
-      <Enactus />
-      <div>
-        <h1>lorem ipsum</h1>
-      </div>
+      {/* <Enactus /> */}
     </div>
   );
 };

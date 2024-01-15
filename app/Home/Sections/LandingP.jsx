@@ -17,7 +17,7 @@ const LandingP = () => {
     >
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src= {require('../imgs/enactusa.jpg')}
+        src={require('../imgs/enactusa.jpg')}
         alt="animated gif"
         style={{
           objectFit: 'cover',
@@ -42,7 +42,7 @@ const LandingP = () => {
         >
           Sub Text
         </p>
-        <Button text={"Show More"} />
+        <Button text={"Show More"} onClick={() => console.log("Button clicked")} />
       </div>
     </div>
   );

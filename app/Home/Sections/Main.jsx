@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './Main.css';
+import EnactusLogo from "../../../public/enactusico.svg";
 
 function Navbar() {
     const [ navbar, setNavbar] = useState(false);
@@ -10,7 +11,7 @@ function Navbar() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="/#" className="logoenactus">
-                            <img src={require('../imgs/enactus.png')} className="text-2xl font-bold" width="50" height="100" />
+                            <img src={EnactusLogo} className="text-2xl font-bold" width="50" height="100" />
                         </a>
                         <div className="md:hidden" style={{
                             transition: '1s ease-in-out !important'
