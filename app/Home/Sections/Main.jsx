@@ -6,6 +6,7 @@ import EnactusLogo from "../../../public/Orgami.png";
 
 function Navbar() {
     const [ navbar, setNavbar] = useState(false);
+    const [ burger, setBurger] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,13 +40,13 @@ function Navbar() {
                             }}>
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                                onClick={() => setNavbar(!navbar)}
+                                onClick={() => setBurger(!burger)}
                                 style={{
                                     transition: 'transform 0.5s ease-in-out',
-                                    transform: navbar ? 'rotate(45deg)' : 'rotate(0deg)'
+                                    transform: burger ? 'rotate(45deg)' : 'rotate(0deg)'
                                 }}
                             >
-                                {navbar ? (
+                                {burger ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-6 h-6"
@@ -81,23 +82,23 @@ function Navbar() {
                 <div>
                     <div
                         className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                            navbar ? "block" : "hidden"
+                            burger ? "block" : "hidden"
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
                                 <Link className="ili" href="/Home">Home</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
                                 <Link className="ili" href="/Events">Events</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
                                 <Link className="ili" href="/Team">Team</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
                                 <Link className="ili" href="/OurProjects">Our Projects</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
                                 <Link className="ili" href="/ContactUS">Contact US</Link>
                             </li>
                         </ul>
