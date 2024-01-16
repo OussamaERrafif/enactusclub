@@ -6,6 +6,7 @@ import Card from './components/Card';
 import Navbar from './Sections/Main';
 import Hero from './Sections/Hero';
 import Enactus from './Sections/Enactus';
+import Events from './Sections/Events';
 
 const App = () => {
   const [navbarClass, setNavbarClass] = useState('');
@@ -43,8 +44,11 @@ const App = () => {
         <Hero />
       </div>
 
-      <div className='p-10'>
+      <div className='p-10 m-10'>
         <Enactus /> 
+      </div>
+      <div className='p-10 m-10'>
+        <Events/>
       </div>
     </div>
   );
