@@ -10,22 +10,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      className="relative"
-      style={{
-        paddingBottom: '56.25%',
-      }}
-    >
+    <div className="relative" style={{ paddingBottom: '56.25%' }}>
       <Image
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src={require('../imgs/enactusa.jpg')}
+        src={require("../imgs/enactusa.jpg")}  // Update the path based on your project structure
         alt="animated gif"
-        style={{
-          objectFit: 'cover',
-        }}
+        width={1920}  // Update with the actual width of your image
+        height={1080} // Update with the actual height of your image
+        style={{ objectFit: 'cover' }}
       />
       <div
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full  pl-10"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full pl-10"
         style={{
           opacity: isVisible ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
@@ -34,16 +29,10 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white text-left">
           ENACTUS ENSA Agadir
         </h1>
-        <p
-          className="text-xl md:text-2xl text-white mt-4 text-left"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transition: 'opacity 1s ease-in-out',
-          }}
-        >
-           jeunes entrepreneurs participent activement au développement durable au Maroc depuis 2003
+        <p className="text-xl md:text-2xl text-white mt-4 text-left">
+          jeunes entrepreneurs participent activement au développement durable au Maroc depuis 2003
         </p>
-        <div className="text-left"> {/* Updated */}
+        <div className="text-left">
           <Button className="" text={"Show More"} onClick={() => console.log("Button clicked")} />
         </div>
       </div>
