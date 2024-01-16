@@ -6,6 +6,23 @@ import EnactusLogo from "../../../public/Orgami.png";
 
 function Navbar() {
     const [ navbar, setNavbar] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const isScrolled = scrollY > 0;
+
+            setNavbar(isScrolled);
+        };
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     
 
     return (
@@ -68,19 +85,19 @@ function Navbar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white hover:text-yellow-600">
+                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
                                 <Link className="ili" href="/Home">Home</Link>
                             </li>
-                            <li className="text-white hover:text-yellow-600">
+                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
                                 <Link className="ili" href="/Events">Events</Link>
                             </li>
-                            <li className="text-white hover:text-yellow-600">
+                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
                                 <Link className="ili" href="/Team">Team</Link>
                             </li>
-                            <li className="text-white hover:text-yellow-600">
+                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
                                 <Link className="ili" href="/OurProjects">Our Projects</Link>
                             </li>
-                            <li className="text-white hover:text-yellow-600">
+                            <li className={` hover:text-yellow-600 ${navbar ? 'text-black' : 'text-white'}`}>
                                 <Link className="ili" href="/ContactUS">Contact US</Link>
                             </li>
                         </ul>
