@@ -7,7 +7,7 @@ const Enactus = () => {
     <div className="enactus-container animate-fade-in " >
       <h1 className='text-center text-2xl font-bold mb-11'>What is <span className='bg-yellow-300'>Enactus</span>: </h1>
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="justify-between w-1/2 md:block sm:block lg:flex gap-[44px]">
+        <div className="justify-between lg:w-1/2 md:w-1/2 sm:w-full md:block sm:block lg:flex gap-[44px]">
           <div className="flex flex-col items-center animate-fade-in">
             <div className="w-40 h-40 rounded-full bg-yellow-400 flex justify-center items-center transform hover:scale-110 transition duration-300">
               <span className="text-2xl font-bold">EN</span>
