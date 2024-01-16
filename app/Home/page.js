@@ -18,8 +18,9 @@ const App = () => {
       <div className="relative z-0">
         <Hero />
       </div>
-
-      {/* <Enactus /> */}
+      <div className='p-10'>
+      <Enactus /> 
+      </div>
     </div>
   );
 };
