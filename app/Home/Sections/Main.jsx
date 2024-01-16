@@ -1,17 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
 import './Main.css';
-import EnactusLogo from "../../../public/enactusico.svg";
+import EnactusLogo from "../../../public/Orgami.png";
 
 function Navbar() {
     const [ navbar, setNavbar] = useState(false);
+    
 
     return (
-        <nav className="w-full bg-white shadow">
+        <div className=" sticky">
+        <nav classname ={`w-full bg-white shadow bg-transparent`}>
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="/#" className="logoenactus">
-                            <img src={EnactusLogo} className="text-2xl font-bold" width="50" height="100" />
+                            <Image src={EnactusLogo} className=" w-full h-full" width="100" height="50" />
                         </a>
                         <div className="md:hidden" style={{
                             transition: '1s ease-in-out !important'
@@ -64,26 +68,27 @@ function Navbar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-yellow-600">
-                                <a className="ili" href="javascript:void(0)">Home</a>
+                            <li className="text-white hover:text-yellow-600">
+                                <Link className="ili" href="/Home">Home</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-yellow-600">
-                                <a className="ili" href="javascript:void(0)">Events</a>
+                            <li className="text-white hover:text-yellow-600">
+                                <Link className="ili" href="/Events">Events</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-yellow-600">
-                                <a className="ili" href="javascript:void(0)">Team</a>
+                            <li className="text-white hover:text-yellow-600">
+                                <Link className="ili" href="/Team">Team</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-yellow-600">
-                                <a className="ili" href="javascript:void(0)">Our Projects</a>
+                            <li className="text-white hover:text-yellow-600">
+                                <Link className="ili" href="/OurProjects">Our Projects</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-yellow-600">
-                                <a className="ili" href="javascript:void(0)">Contact US</a>
+                            <li className="text-white hover:text-yellow-600">
+                                <Link className="ili" href="/ContactUS">Contact US</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        </div>
     );
 }
 export default Navbar;
