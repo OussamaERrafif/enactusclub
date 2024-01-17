@@ -86,19 +86,19 @@ function Navbar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-yellow-400 md:text-yellow-400'} sm:text-black`}>
                                 <Link className="ili" href="/Home">Home</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-yellow-400 md:text-yellow-400'} sm:text-black`}>
                                 <Link className="ili" href="/Events">Events</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-yellow-400 md:text-yellow-400'} sm:text-black`}>
                                 <Link className="ili" href="/Team">Team</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-yellow-400 md:text-yellow-400'} sm:text-black`}>
                                 <Link className="ili" href="/OurProjects">Our Projects</Link>
                             </li>
-                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-white md:text-white'} sm:text-black`}>
+                            <li className={` hover:text-yellow-600 ${navbar ? 'lg:text-black md:text-black' : 'lg:text-yellow-400 md:text-yellow-400'} sm:text-black`}>
                                 <Link className="ili" href="/ContactUS">Contact US</Link>
                             </li>
                         </ul>
