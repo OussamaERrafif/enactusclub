@@ -7,6 +7,7 @@ import Navbar from './Sections/Navbar';
 import Hero from './Sections/Hero';
 import Enactus from './Sections/Enactus';
 import Events from './Sections/Events';
+import Footer from './Sections/Footer';
 
 const App = () => {
   const [navbarClass, setNavbarClass] = useState('');
@@ -44,12 +45,15 @@ const App = () => {
         <Hero />
       </div>
 
-      <div className='p-10 m-10'>
+      <div className='p-10 m-10 pb-0 mb-0'>
         <Enactus /> 
       </div>
-      <div className='p-10 m-10'>
+      <div className='p-10 m-10 pb-0 mb-0'>
         <Events/>
       </div>
+      <div className='p-10 m-10 pb-0 mb-0'>
+        <Footer/>
+        </div>
     </div>
   );
 };
