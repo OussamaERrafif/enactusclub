@@ -16,7 +16,7 @@ const Imgh = ({ src, alt, title }) => {
 
   return (
     <div
-      className='flex flex-col max-w-full sm:min-w-sm md:min-w-md lg:min-w-lg xl:min-w-xl rounded overflow-hidden shadow-lg transition-transform duration-500 ease-in-out relative m-4 '
+      className='flex flex-col max-w-full min-w-full  rounded overflow-hidden shadow-lg transition-transform duration-500 ease-in-out relative m-4 '
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
