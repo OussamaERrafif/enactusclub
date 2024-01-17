@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import './Main.css';
+import './Global.css';
 import EnactusLogo from "../../../public/Orgami.png";
 
 function Navbar() {
@@ -32,7 +32,7 @@ function Navbar() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="/#" className="logoenactus">
+                        <a href="/Home" className="logoenactus">
                             <Image src={EnactusLogo} className=" w-full h-full" width="100" height="50" />
                         </a>
                         <div className="md:hidden" style={{

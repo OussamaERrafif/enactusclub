@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       {/* Transparent Navbar */}
-      <div className={`p-4 md:fixed lg:fixed  w-full z-10 transition-all ${navbarClass} sm:static  `}>
+      <div className={`p-4 md:fixed lg:fixed  w-full z-[11] transition-all ${navbarClass} sm:static  `}>
         <Navbar />
       </div>
       

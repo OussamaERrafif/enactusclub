@@ -26,13 +26,13 @@ const Hero = () => {
           transition: 'opacity 1s ease-in-out',
         }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-white text-left">
+        <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
           ENACTUS ENSA Agadir
         </h1>
-        <p className="text-xl md:text-2xl text-white mt-4 text-left">
+        <p className="text-xl md:text-2xl text-white mt-4 text-center">
           jeunes entrepreneurs participent activement au développement durable au Maroc depuis 2003
         </p>
-        <div className="text-left">
+        <div className="text-right mt-11">
           <Button className="" text={"Show More"} onClick={() => console.log("Button clicked")} />
         </div>
       </div>
