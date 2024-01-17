@@ -27,7 +27,7 @@ function Navbar() {
     
 
     return (
-        <div className=" sticky">
+        <div className=" sticky  ">
         <nav classname ={`w-full bg-white shadow bg-transparent`}>
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
