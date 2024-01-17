@@ -10,35 +10,38 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex items-center overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-      <Image
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src={require('../imgs/enactusa.jpg')}
-        alt="ENACTUS ENSA Agadir"
-        width={1920}
-        height={1080}
-        style={{ objectFit: 'cover', maxHeight: '80vh' }}
-      />
-      <div
-        className="absolute text-center w-full text-white"
-        style={{
-          opacity: isVisible ? 1 : 0,
-          transition: 'opacity 1s ease-in-out',
-          top: '50%',
-          transform: 'translateY(-50%)',
-        }}
-      >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Welcome to ENACTUS ENSA Agadir
-        </h1>
-        <p className="text-lg md:text-xl mb-6">
-          Empowering young entrepreneurs for sustainable development in Morocco since 2003.
-        </p>
-        <div>
-          <Button className="bg-yellow-300 text-gray-800 hover:bg-yellow-400" text="Explore More" onClick={() => console.log('Button clicked')} />
+    <section className="bg-yellow-500 text-black">
+      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1
+            className="bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+          >
+            Welcome to 
+            <span className="sm:block"> ENACTUS ENSA Agadir </span>
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+            Empowering young entrepreneurs for sustainable development in Morocco since 2003.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              className="block w-full rounded border border-black bg-white px-12 py-3 text-sm font-medium text-black hover:bg-transparent hover:text-black focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+              href="/get-started"
+            >
+              Get Started
+            </a>
+
+            <a
+              className="block w-full rounded border border-black px-12 py-3 text-sm font-medium text-black hover:bg-white focus:outline-none focus:ring active:bg-gray-200 sm:w-auto"
+              href="/about"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
