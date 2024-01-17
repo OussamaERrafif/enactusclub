@@ -48,7 +48,7 @@ const App = () => {
       <div className='p-10 m-10 pb-0 mb-0'>
         <Enactus /> 
       </div>
-      <div className='p-10 m-10 pb-0 mb-0'>
+      <div className=' pb-0 mb-0'>
         <Events/>
       </div>
       <div className='p-10 m-10 pb-0 mb-0'>

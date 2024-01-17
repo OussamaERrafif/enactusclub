@@ -6,6 +6,7 @@ import project2 from '../imgs/project2.jpg';
 
 const Events = () => {
   return (
+    <section className='bg-white'>
     <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center">
       <h1 className="text-2xl text-center font-bold mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12">
         Our <span className="bg-yellow-300">Events</span>:
@@ -15,6 +16,7 @@ const Events = () => {
         <Imgh className="lg:w-1/2 md:w-full sm:w-full " src={project2} alt={"a1"} title={"Women Entrepreneur"} />
       </div>
     </div>
+    </section>
   );
 };
 
